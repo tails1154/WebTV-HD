@@ -7,12 +7,14 @@
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width,initial-scale=1">
 	<meta name=display content="noScroll noMusic">
+	<script src=../js/superhacky1999homething.js></script>
 </head><body>
 <nav class="sidebar tv">
 	<div class=sidebar-contents aria-role=navigation>
 		<img class="sidebar-logo clickable" src=../images/WebTVJewel.svg alt="WebTV Logo - Click to go home" onclick=parent.view()>
 		<div class="sidebar-border bwgrad"></div>
-		<div class="sidebar-link clickable" onclick=parent.view()>Web Home</div>
+		<div class="sidebar-link clickable" onclick="if ( getIsLastPage1999() == false ) { console.log('were doing the parent.view() transition because getIsLastPage1999() returned FALSE
+); parent.view(); } else { console.log('were going to 1999home.html because getIsLastPage1999() returned true'); go('../wtv-home/1999home.html') }">Web Home</div>
 		<div class="sidebar-border bwgrad"></div>
 		<div class="sidebar-link clickable">Settings</div>
 		<div class="sidebar-border bwgrad"></div>
@@ -22,7 +24,8 @@
 		<div class="sidebar-border bwgrad"></div>
 	</div>
 </nav>
-<p class=mobile-warning>Due to layout and design issues that <s>I'm too lazy to resolve</s> currently cannot be resolved, you'll need to use a desktop computer to access this page.<br><button onclick=parent.view()>Back to Web Mode</button></p>
+<p class=mobile-warning>Due to layout and design issues that <s>I'm too lazy to resolve</s> currently cannot be resolved, you'll need to use a desktop computer to access this page.<br><button onclick="if ( getIsLastPage1999() == false ) { console.log('were doing the parent.view() transition because getIsLastPage1999() returned FALSE
+); parent.view(); } else { console.log('were going to 1999home.html because getIsLastPage1999() returned true'); go('../wtv-home/1999home.html') }">Back to Web Mode</button></p>
 <main class="main-content tv">
 	<header class=top-row aria-label="Top header: Contains clock">
 		<div class=tv-home-text title="hi there, curious hoverer!" aria-hidden=true></div>

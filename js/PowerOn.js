@@ -72,12 +72,17 @@ function initDialing(){
 			Progress bar values are defined from 0 to 100, counting by tens.
 			The example provided mimmics a box with a Tellyscript.*/
 		const progressBarMessages=[
-			{message:'Dialing WebTV',interval:20,value:11},
-			{message:'Waiting for answer',interval:50,value:43},
-			{message:'WebTV answering',interval:70,value:60},
-			{message:'Connecting',interval:90,value:90},
-			{message:'Connecting to WebTV',interval:160,value:100},
-			{message:'Connected to WebTV',interval:320,value:110}
+			{message:'Dialing toll free',interval:20,value:10},
+			{message:'Waiting for answer',interval:70,value:43},
+			{message:'WebTV answering',interval:80,value:45},
+			{message:'Connected to WebTV',interval:90,value:50},
+			{message:'Preparing to call again',interval:190,value:51},
+			{message:'Preparing to call',interval:195,value:52},
+			{message:'Dialing 14848201337',interval:200,value:60},
+			{message:'Waiting for answer',interval:250,value:67}, // 67 hahahahahahhaha
+			{message:'Connecting',interval:290,value:90}, // 69%. nice.
+			{message:'Connecting to WebTV',interval:320,value:100},
+			{message:'Connecting to WebTV',interval:520,value:110}
 		];
 		progressBarMessages.forEach(function(details){
 			if(value==details.interval){
